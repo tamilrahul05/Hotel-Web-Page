@@ -21,31 +21,49 @@
         <div class="container">
             <div class="header-content">
                 <a href="#home" class="logo">
-                    <img src="Biryani_icon.png" alt="Bhai Biryani Logo" class="logo-img">
+                    <div class="logo-icon-wrapper">
+                        <!-- Custom Royal Biryani SVG Logo -->
+                        <svg viewBox="0 0 100 100" class="logo-svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#ffd700" stroke-width="2" />
+                            <path d="M25,65 Q50,85 75,65 L75,50 Q50,30 25,50 Z" fill="#ffd700" />
+                            <path d="M30,45 Q50,20 70,45" fill="none" stroke="#ffd700" stroke-width="3"
+                                stroke-linecap="round" />
+                            <circle cx="50" cy="40" r="3" fill="#ffd700" />
+                        </svg>
+                    </div>
                     <div class="logo-text">
                         <span class="logo-name">Bhai Biryani</span>
                         <span class="logo-tagline">The Royal Taste</span>
                     </div>
                 </a>
 
-                <!-- Mobile Menu Toggle (Pure CSS) -->
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
+                <nav class="main-nav-wrapper">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
 
-                <nav class="main-nav">
-                    <a href="#home">HOME</a>
-                    <a href="#menu">MENU</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#reviews">REVIEWS</a>
-                    <a href="#faq">FAQ</a>
+                    <div class="nav-menu">
+                        <div class="nav-links">
+                            <a href="#home">HOME</a>
+                            <a href="#menu">MENU</a>
+                            <a href="#about">ABOUT</a>
+                            <a href="#reviews">REVIEWS</a>
+                            <a href="#faq">FAQ</a>
+                        </div>
+                        <a href="#menu" class="btn-order-mobile">Order Now</a>
+                    </div>
                 </nav>
 
-                <a href="#menu" class="btn-order">Order Now</a>
+                <div class="header-actions">
+                    <a href="#menu" class="btn-order desktop-only">Order Now</a>
+                </div>
             </div>
         </div>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero-section" id="home">
