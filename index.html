@@ -32,14 +32,72 @@
 
 
                 <nav class="main-nav-wrapper">
-                    <div class="nav-menu desktop-only">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </label>
+
+                    <div class="nav-menu">
                         <div class="nav-links">
-                            <a href="#home">HOME</a>
-                            <a href="#menu">MENU</a>
-                            <a href="#about">ABOUT</a>
-                            <a href="#reviews">REVIEWS</a>
-                            <a href="#faq">FAQ</a>
+                            <a href="#home">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                HOME
+                            </a>
+                            <a href="#about">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                ABOUT US
+                            </a>
+                            <a href="#menu">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                </svg>
+                                OUR MENU
+                            </a>
+                            <a href="#offers">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="M7 11h0M11 11h0M15 11h0M7 15h0M11 15h0M15 15h0"></path>
+                                </svg>
+                                OFFERS
+                            </a>
+                            <a href="#gallery">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                                GALLERY
+                            </a>
+                            <a href="#reviews">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                REVIEWS
+                            </a>
+                            <a href="#contact">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                CONTACT
+                            </a>
                         </div>
+                        <a href="#menu" class="btn-order-mobile">Order Now</a>
                     </div>
                 </nav>
 
@@ -65,7 +123,7 @@
                         bite is a celebration of heritage!
                     </p>
                     <div class="hero-cta">
-                        <a href="#menu" class="btn-order-red">Explore Menu</a>
+                        <a href="#menu" class="btn-order-red">Order Now</a>
                         <span class="product-name">Special Mutton Biryani</span>
                         <span class="price">Rs 450</span>
                     </div>
@@ -114,6 +172,36 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container reveal-on-scroll">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/dish2.jpg" alt="Traditional Dum Biryani" class="about-img-main">
+                    <div class="about-experience-badge">
+                        <span class="years">25+</span>
+                        <span class="text">Years of<br>Heritage</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title-left">Authentic Heritage</h2>
+                    <p class="about-p">At <strong>Bhai Biryani</strong>, we preserve the age-old art of traditional
+                        <strong>Dum Biryani</strong>. Every grain of long-grain basmati rice is slow-cooked to
+                        perfection, infused with hand-picked spices and the finest saffron.
+                    </p>
+                    <p class="about-p">We believe in quality without compromise. That's why we use only <strong>fresh,
+                            farm-sourced ingredients</strong> and authentic secret spice blends passed down through
+                        generations of royal kitchens.</p>
+                    <div class="about-features">
+                        <div class="af-item">⭐ 100% Fresh Meat</div>
+                        <div class="af-item">⭐ Traditional Wood-fire Dum</div>
+                        <div class="af-item">⭐ No Artificial Colors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Signature Section -->
     <section class="signature-section" id="menu">
         <div class="container reveal-on-scroll">
@@ -121,63 +209,47 @@
             <p class="signature-subtitle">Crafted with royalty in mind, served with love</p>
 
             <div class="signature-grid">
-                <!-- Dish 1 -->
+                <!-- Dish 1: Mutton -->
                 <div class="signature-card">
                     <div class="dish-image-box">
-                        <img src="assets/dish1.jpg" alt="Hyderabadi Biryani">
-                        <span class="dish-badge">Popular</span>
+                        <img src="assets/dish1.jpg" alt="Mutton Biryani">
+                        <span class="dish-badge">Royal Favorite</span>
                     </div>
                     <div class="dish-info">
-                        <h3>Hyderabadi Dum Biryani</h3>
-                        <p>Authentic slow-cooked saffron rice with tender marinated meat.</p>
+                        <h3>Mutton Dum Biryani</h3>
+                        <p>Tender pieces of mutton slow-cooked with aromatic basmati rice and secret spices.</p>
                         <div class="dish-meta">
-                            <span class="dish-price">Rs 350</span>
+                            <span class="dish-price">Rs 450</span>
                             <a href="#" class="dish-btn">Order</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dish 2 -->
+                <!-- Dish 2: Chicken -->
                 <div class="signature-card">
                     <div class="dish-image-box">
-                        <img src="assets/dish2.jpg" alt="Arabian Mandhi">
-                        <span class="dish-badge">Chef's Choice</span>
+                        <img src="assets/dish2.jpg" alt="Chicken Biryani">
+                        <span class="dish-badge">Must Try</span>
                     </div>
                     <div class="dish-info">
-                        <h3>Royal Arabian Mandhi</h3>
-                        <p>Tender meat served over a bed of smoky, aromatic long-grain rice.</p>
+                        <h3>Classic Chicken Biryani</h3>
+                        <p>The legendary Bhai Biryani experience with perfectly marinated chicken pieces.</p>
                         <div class="dish-meta">
-                            <span class="dish-price">Rs 590</span>
+                            <span class="dish-price">Rs 320</span>
                             <a href="#" class="dish-btn">Order</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dish 3 -->
+                <!-- Dish 3: Veg -->
                 <div class="signature-card">
                     <div class="dish-image-box">
-                        <img src="assets/dish3.jpg" alt="Lucknowi Biryani">
-                        <span class="dish-badge">Delicate</span>
+                        <img src="assets/dish3.jpg" alt="Veg Biryani">
+                        <span class="dish-badge">Fresh</span>
                     </div>
                     <div class="dish-info">
-                        <h3>Lucknowi Royal Pulao</h3>
-                        <p>The gentle heritage of Awadh, cooked with mild spices and rose water.</p>
-                        <div class="dish-meta">
-                            <span class="dish-price">Rs 420</span>
-                            <a href="#" class="dish-btn">Order</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dish 4 -->
-                <div class="signature-card">
-                    <div class="dish-image-box">
-                        <img src="assets/dish4.jpg" alt="Chicken 65">
-                        <span class="dish-badge">Star Side</span>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Classic Chicken 65</h3>
-                        <p>Deep-fried spicy chicken tempered with curry leaves and green chilies.</p>
+                        <h3>Royal Veg Biryani</h3>
+                        <p>A garden of fresh vegetables layered with spices and premium basmati rice.</p>
                         <div class="dish-meta">
                             <span class="dish-price">Rs 280</span>
                             <a href="#" class="dish-btn">Order</a>
@@ -185,37 +257,84 @@
                     </div>
                 </div>
 
-                <!-- Dish 5 -->
+                <!-- Dish 4: Egg -->
                 <div class="signature-card">
                     <div class="dish-image-box">
-                        <img src="assets/dish5.jpg" alt="Paneer Butter Masala">
-                        <span class="dish-badge">Veg Special</span>
+                        <img src="assets/dish4.jpg" alt="Egg Biryani">
+                        <span class="dish-badge">Daily Choice</span>
                     </div>
                     <div class="dish-info">
-                        <h3>Paneer Tikka Masala</h3>
-                        <p>Char-grilled paneer cubes in a rich, creamy tomato gravy.</p>
+                        <h3>Aromatic Egg Biryani</h3>
+                        <p>Hard-boiled eggs perfectly seasoned and bedded in fragrant biryani rice.</p>
                         <div class="dish-meta">
-                            <span class="dish-price">Rs 310</span>
+                            <span class="dish-price">Rs 250</span>
                             <a href="#" class="dish-btn">Order</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dish 6 -->
+                <!-- Dish 5: Starters -->
                 <div class="signature-card">
                     <div class="dish-image-box">
-                        <img src="assets/dish6.jpg" alt="Double Ka Meetha">
-                        <span class="dish-badge">Legacy</span>
+                        <img src="assets/dish5.jpg" alt="Chicken 65">
+                        <span class="dish-badge">Crunchy</span>
                     </div>
                     <div class="dish-info">
-                        <h3>Double Ka Meetha</h3>
-                        <p>Royal bread pudding soaked in saffron milk and topped with nuts.</p>
+                        <h3>Bhai Special Starters</h3>
+                        <p>Spicy Chicken 65 and Gobi Manchurian to kickstart your royal feast.</p>
                         <div class="dish-meta">
-                            <span class="dish-price">Rs 180</span>
+                            <span class="dish-price">Rs 220</span>
                             <a href="#" class="dish-btn">Order</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Dish 6: Beverages/Desserts -->
+                <div class="signature-card">
+                    <div class="dish-image-box">
+                        <img src="assets/dish6.jpg" alt="Beverages">
+                        <span class="dish-badge">Refreshing</span>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Drinks & Desserts</h3>
+                        <p>Royal Falooda, Saffron Milk, and Double Ka Meetha to end on a sweet note.</p>
+                        <div class="dish-meta">
+                            <span class="dish-price">Rs 150</span>
+                            <a href="#" class="dish-btn">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers-section" id="offers">
+        <div class="container reveal-on-scroll">
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <span class="offer-tag">Limited Time</span>
+                    <h2 class="offer-title">Weekend Combo Offer</h2>
+                    <p class="offer-desc">Buy 2 Family Packs and get a <strong>FREE Mutton Haleem</strong> + 10% instant
+                        discount!</p>
+                    <div class="offer-discount">20% OFF</div>
+                    <a href="#menu" class="btn-order-white">Grab Offer Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container reveal-on-scroll">
+            <h2 class="section-title">Royal Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/dish1.jpg" alt="Gallery 1"></div>
+                <div class="gallery-item"><img src="assets/dish2.jpg" alt="Gallery 2"></div>
+                <div class="gallery-item"><img src="assets/dish3.jpg" alt="Gallery 3"></div>
+                <div class="gallery-item"><img src="assets/dish4.jpg" alt="Gallery 4"></div>
+                <div class="gallery-item"><img src="assets/dish5.jpg" alt="Gallery 5"></div>
+                <div class="gallery-item"><img src="assets/dish6.jpg" alt="Gallery 6"></div>
             </div>
         </div>
     </section>
@@ -321,6 +440,68 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container reveal-on-scroll">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <span class="c-icon">📍</span>
+                        <div class="c-text">
+                            <strong>Address:</strong><br>
+                            123 Royal Kitchen Road, Biryani Nagar, Chennai - 600001
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="c-icon">📞</span>
+                        <div class="c-text">
+                            <strong>Phone:</strong><br>
+                            +91 98765 43210
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="c-icon">📧</span>
+                        <div class="c-text">
+                            <strong>Email:</strong><br>
+                            order@bhaibiryani.com
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15545.41400275816!2d80.2520626!3d13.0674394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52661595166f2d%3A0xc39162986445b206!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0; border-radius:15px;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="contact-form-panel">
+                    <form id="restaurant-contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Inquiry Type</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-order-red-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
@@ -335,6 +516,10 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About us</a></li>
                         <li><a href="#menu">Menu</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -350,78 +535,14 @@
             </div>
         </div>
     </footer>
-    <!-- Mobile Bottom Navigation Bar -->
-    <nav class="mobile-icon-bar">
-        <a href="#home" class="bar-item active">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-            <span class="bar-label">Home</span>
-        </a>
-        <a href="#menu" class="bar-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="8" y1="6" x2="21" y2="6"></line>
-                <line x1="8" y1="12" x2="21" y2="12"></line>
-                <line x1="8" y1="18" x2="21" y2="18"></line>
-                <line x1="3" y1="6" x2="3.01" y2="6"></line>
-                <line x1="3" y1="12" x2="3.01" y2="12"></line>
-                <line x1="3" y1="18" x2="3.01" y2="18"></line>
-            </svg>
-            <span class="bar-label">Menu</span>
-        </a>
-        <a href="#about" class="bar-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="16" x2="12" y2="12"></line>
-                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-            </svg>
-            <span class="bar-label">About</span>
-        </a>
-        <a href="#reviews" class="bar-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-            <span class="bar-label">Reviews</span>
-        </a>
-        <a href="#faq" class="bar-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                <line x1="12" y1="17" x2="12.01" y2="17"></line>
-            </svg>
-            <span class="bar-label">FAQ</span>
-        </a>
-    </nav>
-
     <script>
-        // Handle active state in the mobile icon bar
-        const barItems = document.querySelectorAll('.bar-item');
+        // Auto-close mobile menu when a link is clicked
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.querySelectorAll('.nav-menu a');
 
-        barItems.forEach(item => {
-            item.addEventListener('click', () => {
-                barItems.forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-
-        // Set active on scroll
-        window.addEventListener('scroll', () => {
-            let current = "";
-            const sections = document.querySelectorAll('section, header');
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 150) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            barItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href').includes(current)) {
-                    item.classList.add('active');
-                }
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.checked = false;
             });
         });
     </script>
