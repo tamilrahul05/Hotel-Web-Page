@@ -32,14 +32,7 @@
 
 
                 <nav class="main-nav-wrapper">
-                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                    <label for="nav-toggle" class="nav-toggle-label">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </label>
-
-                    <div class="nav-menu">
+                    <div class="nav-menu desktop-only">
                         <div class="nav-links">
                             <a href="#home">HOME</a>
                             <a href="#menu">MENU</a>
@@ -47,7 +40,6 @@
                             <a href="#reviews">REVIEWS</a>
                             <a href="#faq">FAQ</a>
                         </div>
-                        <a href="#menu" class="btn-order-mobile">Order Now</a>
                     </div>
                 </nav>
 
@@ -82,14 +74,13 @@
                     <div class="features-icons">
                         <div class="feature-icon">
                             <div class="icon-box">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <rect x="1" y="3" width="15" height="13"></rect>
-                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <span>Freshly<br>Made</span>
+                            <span>Piping<br>Hot</span>
+
                         </div>
                         <div class="feature-icon">
                             <div class="icon-box">
@@ -103,18 +94,20 @@
                         </div>
                         <div class="feature-icon">
                             <div class="icon-box">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
                             </div>
-                            <span>Fast<br>Delivery</span>
+                            <span>Express<br>Delivery</span>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-image-wrapper animate-fade-right">
                     <div class="hero-image">
-                        <img src="assets/hero.jpg" alt="Royal Biryani">
+                        <img src="assets/hero_alt.png" alt="Royal Biryani">
                     </div>
                 </div>
             </div>
@@ -357,6 +350,81 @@
             </div>
         </div>
     </footer>
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="mobile-icon-bar">
+        <a href="#home" class="bar-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span class="bar-label">Home</span>
+        </a>
+        <a href="#menu" class="bar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span class="bar-label">Menu</span>
+        </a>
+        <a href="#about" class="bar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span class="bar-label">About</span>
+        </a>
+        <a href="#reviews" class="bar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span class="bar-label">Reviews</span>
+        </a>
+        <a href="#faq" class="bar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span class="bar-label">FAQ</span>
+        </a>
+    </nav>
+
+    <script>
+        // Handle active state in the mobile icon bar
+        const barItems = document.querySelectorAll('.bar-item');
+
+        barItems.forEach(item => {
+            item.addEventListener('click', () => {
+                barItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        // Set active on scroll
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll('section, header');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            barItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
